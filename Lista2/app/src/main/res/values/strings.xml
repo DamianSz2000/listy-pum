@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TasksGradesApp</string>
+    <string name="task_lists">Task lists</string>
+    <string name="grades">Grades</string>
+</resources>

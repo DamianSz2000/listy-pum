@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/taskListsFragment"
+        android:title="@string/task_lists"
+        android:icon="@drawable/ic_tasks" />
+    <item
+        android:id="@+id/gradesFragment"
+        android:title="@string/grades"
+        android:icon="@drawable/ic_grades" />
+</menu>

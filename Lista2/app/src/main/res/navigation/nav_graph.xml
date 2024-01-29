@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/taskListsFragment">
+
+    <fragment
+        android:id="@+id/gradesFragment"
+        android:name="com.example.tasksgradesapp.GradesFragment" />
+
+    <fragment
+        android:id="@+id/taskListsFragment"
+        android:name="com.example.tasksgradesapp.TaskListsFragment"
+        android:label="task_lists_fragment" >
+        <action
+            android:id="@+id/action_taskListsFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.example.tasksgradesapp.TaskDetailFragment"
+        android:label="task_detail_fragment" >
+        <argument
+            android:name="exerciseList"
+            app:argType="java.io.Serializable" />
+    </fragment>
+
+
+</navigation>
